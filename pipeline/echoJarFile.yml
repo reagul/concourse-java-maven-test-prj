@@ -9,7 +9,7 @@ image_resource:
 
 inputs:
   - name: time
-  - name: {{jar-file}}
+  - name: jar-file
 
 # outputs:
 #   - name: jar-file-renamed

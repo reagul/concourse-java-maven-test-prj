@@ -6,7 +6,10 @@ image_resource:
   source:
     repository: alpine
     tag: latest
-
+  - name: time
+    type: time
+    source:
+      interval: 60s
 inputs:
   - name: time
   - name: jar-file

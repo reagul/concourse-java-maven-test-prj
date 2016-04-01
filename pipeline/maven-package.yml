@@ -8,11 +8,11 @@ image_resource:
     tag: latest
 
 inputs:
-- name: project-src
+- name: git-repo
 
 outputs:
-- name: built-project
-
+- name: jar-file
+path: git-repo/target/
 
 run:
   path: mvn

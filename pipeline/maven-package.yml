@@ -10,8 +10,9 @@ image_resource:
 inputs:
  - name: git-repo
 
+
 outputs:
-- name: jar-file
+  - name: jar-file
   path: git-repo/target/
 
 run:

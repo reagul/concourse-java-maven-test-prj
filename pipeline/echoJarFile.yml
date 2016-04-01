@@ -8,7 +8,7 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: {time}
+  - name: time
   - name: jar-file
 
 # outputs:
@@ -17,4 +17,4 @@ inputs:
 
 run:
   path: echo
-  args: [ time ]
+  args: [ {time} ]

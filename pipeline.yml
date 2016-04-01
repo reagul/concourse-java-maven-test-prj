@@ -18,12 +18,13 @@ jobs:
       - get: git-repo
         trigger: true
       - get: time
-    - task: echoJarFile
-      inputs: time
-      file: git-repo/pipeline/echoJarFile.yml
+
     - task: maven-package
       privileged: true
       file: git-repo/pipeline/maven-package.yml
+    - task: echoJarFile
+      inputs: time
+      file: git-repo/pipeline/echoJarFile.yml
     # - task: rename-file
     #   file: git-repo/pipeline/rename-file.yml
     #   attempts: 3

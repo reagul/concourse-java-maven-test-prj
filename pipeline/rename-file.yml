@@ -16,5 +16,6 @@ outputs:
     path: jar-file-renamed
 
 run:
+  attempts: 3
   path: mv
   args: ["jar-file", "jar-file-renamed/concourse-java-maven-test-prj-{{time}}.jar"]

@@ -8,9 +8,9 @@ image_resource:
     tag: latest
 
 inputs:
- - name: git-repo
+  - name: git-repo
  outputs:
- - name: jar-file
+  - name: jar-file
   path: git-repo/target/
 
 

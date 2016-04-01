@@ -23,6 +23,7 @@ jobs:
       file: git-repo/pipeline/maven-package.yml
     - task: rename-file
       file: git-repo/pipeline/rename-file.yml
+      attempts: 3
 
 #   - name: rename file
 #     plan:
